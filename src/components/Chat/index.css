@@ -21,15 +21,19 @@
 
 .chat-container {
   flex: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .chat {
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  height: 90%;
-  /* weird thing on scroll */
-  /* margin-top: 16px; */
+  padding: 16px;
+  max-height: 80vh;
 }
 
 .general-info-container {

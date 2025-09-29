@@ -1,3 +1,6 @@
+import { HStack, Input, Icon, IconButton } from '@chakra-ui/react'
+import { IoMdSend } from 'react-icons/io'
+
 import './index.css'
 
 const Chat = () => {
@@ -66,6 +69,13 @@ const Chat = () => {
             </div>
           </div>
         </div>
+
+        <HStack mt="24px" w="full">
+          <Input />
+          <IconButton>
+            <IoMdSend color="black" />
+          </IconButton>
+        </HStack>
       </div>
       <div className="general-info-container">
         <p className="general-info-text">
